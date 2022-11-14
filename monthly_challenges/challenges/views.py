@@ -14,7 +14,7 @@ monthly_challenges = {
     "september": "Wake up 30 minutes before you have to",
     "october": "Walk 10,000 steps a day",
     "november": "Sit at a table to eat for every meal",
-    "december": "Write a letter to someone new every evening"
+    "december": None
 }
 
 # Create your views here.
