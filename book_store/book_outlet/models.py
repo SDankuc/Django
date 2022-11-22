@@ -14,7 +14,9 @@ class Book(models.Model):
     author = models.CharField(null=True, max_length=100)
     is_bestselling = models.BooleanField(default = False)
                                                     # turning attribute as index so the search is faster
-    slug = models.SlugField(default="", null=False, db_index=True) #Harry Pooter 1 => harry-potter-1
+    slug = models.SlugField(default="",blank=True, null=False, db_index=True) #Harry Pooter 1 => harry-potter-1
+                                        #blank=True <-- slug filed is not mandatory
+                                        #editable = False <-- make field non editable
 
     # method to get url that should represent and load data for this specific model
     def get_absolute_url(self):
